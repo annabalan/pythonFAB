@@ -1,0 +1,19 @@
+# Car salesman program, to determine the actual price of a car
+
+car = float(input("Base Price of the Car: "))
+
+tax = 0.08
+tax = car * tax
+
+license = 0.10
+license = car * license
+
+dealer_prep = 125.0
+
+destination_charge = 500.0
+
+total = car + tax +license + dealer_prep + destination_charge
+
+print("\n\nGrand Total: ", total)
+
+input("\n\nPress the enter key to exit.")
