@@ -1,4 +1,5 @@
 # Exclusive Network
+# Demonstrates using if and elif statments for multiple conditions.
 
 print("\tExclusive Computer Network")
 print("\t\tMembers only!\n")
