@@ -1,4 +1,5 @@
 # Losing Battle
+# Demonstrates avoiding infinite loops and creating conditions that can become false
 
 print("Your lone hero is surrounded by a massive army of trolls.")
 print("Their decaying green bodies stretch out, melting into the horizon.")
