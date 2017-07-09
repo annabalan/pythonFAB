@@ -1,4 +1,5 @@
 # Maitre D'
+# Demonstrates interpeting any value as a condition (True or False)
 
 print("Welcome to the Chateau D' Food")
 print("It seems we are quite full this evening.\n")
