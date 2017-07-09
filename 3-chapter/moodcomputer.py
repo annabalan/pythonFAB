@@ -1,4 +1,5 @@
 # Mood Computer
+# Demonstrates the elif clause
 
 import random
 
