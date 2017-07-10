@@ -1,4 +1,5 @@
-#Personal Greeter
+# Personal Greeter
+# Demonstrates getting user input
 
 name = input("Hi. What's your name? ")
 
