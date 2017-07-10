@@ -1,4 +1,5 @@
-#Quotation Manipulation
+# Quotation Manipulation
+# Demonstrates string method
 
 #quote from IBM Chairman, Thomas Watson, in 1943
 quote = "I think there is a world market for maybe five computers."
