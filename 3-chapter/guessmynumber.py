@@ -17,10 +17,10 @@ tries = 1
 
 #guessing loop
 while guess != the_number:
-  if guess > the_number:
-    print("Lower...")
-  else:
-    print("Higher...")
+    if guess > the_number:
+        print("Lower...")
+    else:
+        print("Higher...")
 
     guess = int(input('Take a guess:'))
     tries += 1
