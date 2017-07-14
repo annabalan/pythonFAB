@@ -11,25 +11,33 @@ print("\nThink of a number between 1 and 100.")
 print("I will try to guess it in as few attempts as possible.\n")
 
 # set the initial values
-SP = 1
-ED = 100
-guess = random.randint(SP, ED)
+a = 1
+b = 100
+guess = random.randint(a, b)
 number = int(input("Choose a Number: "))
-
+tries = 1
 print(guess)
 
+response = ""
 response = input("Is it Lower or Higher: ")
 
 while guess != number:
     if response == "Lower":
-        guess = random.randit(1, guess)
+        a = 1
+        b = guess
+        guess = random.randint(a, b)
+        print(guess)
     elif response == "Higher":
-        guess = random.randint(guess, 100)
-    else:
-        print("Try Again")
+        a = guess
+        b = 100
+        guess = random.randint(a, b)
+        print(guess)
+    guess = random.randint(a, b)
+    response = input("Is it Lower or Higher: ")
+    tries += 1
 
-        response = input("Is it Lower or Higher: ")
 
-print("I guessed it! The number was", the_number)
+print("I guessed it! The number was", number)
+print("And it only took me", tries, "tries!\n")
 
 input("\n\nPress the enter key to exit.")
