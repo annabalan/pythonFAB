@@ -16,16 +16,18 @@ guess = int(input("Take a guess: "))
 tries = 1
 
 #guessing loop
-while guess != the_number:
+while guess != the_number and tries != 10:
     if guess > the_number:
         print("Lower...")
-    else:
+    elif guess < the_number:
         print("Higher...")
-
     guess = int(input('Take a guess:'))
     tries += 1
 
-print("You guessed it! The number was", the_number)
-print("And it only took you", tries, "tries!\n")
+if tries == 10:
+    print("Game Over! You have run out of guesses.")
+else:
+    print("You guessed it! The number was", the_number)
+    print("And it only took you", tries, "tries!\n")
 
 input("\n\nPress the enter key to exit.")
