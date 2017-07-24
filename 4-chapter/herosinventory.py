@@ -24,15 +24,6 @@ print(inventory)
 print("Your items:")
 for item in inventory:
   print(item)
-  
-# concatenate two tuples
-chest = ("gold", "gems")
-print("You find a chest. It contains:")
-print(chest)
-print("You add the contents of the chest to your inventory.")
-inventory += chest
-print("Your inventory is now:")
-print inventory
 
 # get the length of a tuple
 print("\nYou have", len(inventory), "items in your possession.")
@@ -59,7 +50,7 @@ print("\nYou find a chest. It contains:")
 print(chest)
 print("You add the contents of the chest to your inventory.")
 inventory += chest
-print("Your inventory is now:")
+print("\nYour inventory is now:")
 print(inventory)
 
 input("\n\nPress the enter key to exit.")
