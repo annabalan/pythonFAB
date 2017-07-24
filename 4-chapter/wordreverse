@@ -1,0 +1,11 @@
+# Word Reverse
+
+print("\t\t'Welcome to Word Reverse!\n")
+print("Enter in a message and I will write it backwards.")
+start = 0
+
+message = input("Enter a message: ")
+
+print(message[::-1])
+
+input("\n\nPress the Enter key to exit.")
