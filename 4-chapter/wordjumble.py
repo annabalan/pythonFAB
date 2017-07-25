@@ -34,7 +34,20 @@ print("The jumble is:", jumble)
 guess = input("\nYour guess: ")
 while guess != correct and guess != "":
   print("Sorry, that's not it.")
+  if word == "python":
+      print("I might be a snake or a language.")
+  elif word == "jumble":
+      print("Pile of things.")
+  elif word == "easy":
+      print("This is simple.")
+  elif word == "difficult":
+      print("This ones hard.")
+  elif word == "answer":
+      print("Think of a question.")
+  elif word =="xylophone":
+      print("I'm related to music.")
   guess = input("Your guess: ")
+
 if guess == correct:
   print("That's it! You guessed it!\n")
 
