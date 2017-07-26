@@ -19,7 +19,7 @@ while word:
   position = random.randrange(len(word))
   jumble += word[position]
   word = word[:position] + word[(position + 1):]
-
+tries = 0
 # start the game
 print(
 """
@@ -30,22 +30,11 @@ print(
     """
 )
 print("The jumble is:", jumble)
-
+# add in hint and scoring
 guess = input("\nYour guess: ")
 while guess != correct and guess != "":
   print("Sorry, that's not it.")
-  if word == "python":
-      print("I might be a snake or a language.")
-  elif word == "jumble":
-      print("Pile of things.")
-  elif word == "easy":
-      print("This is simple.")
-  elif word == "difficult":
-      print("This ones hard.")
-  elif word == "answer":
-      print("Think of a question.")
-  elif word =="xylophone":
-      print("I'm related to music.")
+  tries += 1
   guess = input("Your guess: ")
 
 if guess == correct:
