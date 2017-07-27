@@ -34,12 +34,28 @@ print("The jumble is:", jumble)
 guess = input("\nYour guess: ")
 while guess != correct and guess != "":
   print("Sorry, that's not it.")
-  tries += 1
-  guess = input("Your guess: ")
+  guess = input("Your guess, type hint for some help: ")
+
+  while guess == "hint":
+    if correct == "python":
+        print("Snake or a language.")
+    elif correct == "jumble":
+        print("Pile")
+    elif correct == "easy":
+        print("Simple")
+    elif correct == "difficult":
+        print("Challenge.")
+    elif correct == "answer":
+        print("Response")
+    elif correct == "xylophone":
+        print("Music")
+    tries += 1
+    hints = 5 - tries
+    guess = input("Your guess: ")
 
 if guess == correct:
   print("That's it! You guessed it!\n")
-
+  print("And you did it with", tries, "hints. That is", hints, "points.")
 print("Thanks for playing.")
 
 input("\n\nPress the enter key to exit.")
