@@ -1,0 +1,11 @@
+# Computer picks a random word and player has to guess.
+
+import random
+
+WORDS = ("")
+
+word = random.choice(WORDS)
+
+length = len(word)
+
+print("Guess the word. It has", length, "letters.")
