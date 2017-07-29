@@ -2,9 +2,11 @@
 
 import random
 
-WORDS = ("")
+WORDS = ("copper,explain,truck,neat,unite,branch,educated,tenuous,decisive,notice")
 
 word = random.choice(WORDS)
+
+correct = word
 
 length = len(word)
 
