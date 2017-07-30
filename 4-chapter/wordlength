@@ -2,12 +2,15 @@
 
 import random
 
-WORDS = ("copper,explain,truck,neat,unite,branch,educated,tenuous,decisive,notice")
+WORDS = ("copper","explain","truck","neat","unite","branch","educated","tenuous","decisive","notice")
 
 word = random.choice(WORDS)
-
-correct = word
 
 length = len(word)
 
 print("Guess the word. It has", length, "letters.")
+guess = input("Enter a letter: ")
+
+for letter in word:
+  if input == letter:
+    print(letter)
