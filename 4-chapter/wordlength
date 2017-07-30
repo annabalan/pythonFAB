@@ -13,4 +13,9 @@ guess = input("Enter a letter: ")
 
 for letter in word:
   if input == letter:
-    print(letter)
+    print("You got one", guess, "in the word.")
+  if input != letter:
+    print("Try again..")
+  guess = input("Enter a letter: ")
+
+input("\n\nPress enter to exit.")
