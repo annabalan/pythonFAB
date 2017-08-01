@@ -7,15 +7,25 @@ WORDS = ("copper","explain","truck","neat","unite","branch","educated","tenuous"
 word = random.choice(WORDS)
 
 length = len(word)
+tries = 0
 
 print("Guess the word. It has", length, "letters.")
-guess = input("Enter a letter: ")
+letter_guess = input("Enter a letter: ")
 
-for letter in word:
-  if input == letter:
-    print("You got one", guess, "in the word.")
-  if input != letter:
-    print("Try again..")
-  guess = input("Enter a letter: ")
+while tries < 5:
+  for letter in word:
+    if letter_guess == letter:
+      print("Yes")
+      tries += 1
+    elif letter_guess != letter:
+      print("No")
+      tries += 1
+    letter_guess = input("Enter a letter: ")
+    word_guess = input("Guess the word: ")
+    if word_guess == word:
+      print("You guess it right! It was", word)
+    elif word_guess != word:
+      print("Sorry! Try again.")
+      word_guess = input("Guess the word: ")
 
 input("\n\nPress enter to exit.")
