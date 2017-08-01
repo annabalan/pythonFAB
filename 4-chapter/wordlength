@@ -1,31 +1,32 @@
 # Computer picks a random word and player has to guess.
 
 import random
-
-WORDS = ("copper","explain","truck","neat","unite","branch","educated","tenuous","decisive","notice")
+#wordlist
+WORDS = ("copper","explain","truck",\
+"neat","unite","branch",\
+"educated","tenuous","decisive","notice")
 
 word = random.choice(WORDS)
+blanks = '_' * len(word)
+print()
+print("Word: ",blanks)
 
-length = len(word)
-tries = 0
+count = 6
 
-print("Guess the word. It has", length, "letters.")
-letter_guess = input("Enter a letter: ")
-
-while tries < 5:
-  for letter in word:
-    if letter_guess == letter:
-      print("Yes")
-      tries += 1
-    elif letter_guess != letter:
-      print("No")
-      tries += 1
-    letter_guess = input("Enter a letter: ")
-    word_guess = input("Guess the word: ")
-    if word_guess == word:
-      print("You guess it right! It was", word)
-    elif word_guess != word:
-      print("Sorry! Try again.")
-      word_guess = input("Guess the word: ")
-
+while True:
+  print ()
+  guess = input ("Please guess a letter: ")
+  
+  
+for letters in word:
+    if guess == letter:
+      letterIndex = word.index(guess)
+      newBlanks = blank[:letterIndex*2] + guess + blanks[letterIndex*2+1:]
+      print("Guess is correct!")
+     else:
+      count -= 1
+      print("Incorrect. You have", count, "more tries left.")
+ print()
+ print("Word: ", newBlanks)
+ 
 input("\n\nPress enter to exit.")
