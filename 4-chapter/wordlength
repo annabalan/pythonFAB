@@ -16,9 +16,7 @@ count = 6
 while True:
   print ()
   guess = input ("Please guess a letter: ")
-  
-  
-for letters in word:
+  for letters in word:
     if guess == letter:
       letterIndex = word.index(guess)
       newBlanks = blank[:letterIndex*2] + guess + blanks[letterIndex*2+1:]
