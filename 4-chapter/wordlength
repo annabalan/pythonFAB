@@ -11,7 +11,7 @@ blanks = '_' * len(word)
 print()
 print("Word: ",blanks)
 
-count = 6
+count = 5
 
 while True:
   print ()
@@ -19,12 +19,14 @@ while True:
   for letter in word:
     if guess == letter:
      letterIndex = word.index(guess)
-     newBlanks = blanks[:letterIndex*2] + guess + blanks[letterIndex*2+1:]
+     newBlanks = blanks
+     [letterIndex*2] + guess + blanks[letterIndex*2+1]
      print("Guess is correct!")
     else:
      count -= 1
      print("Incorrect. You have", count, "more tries left.")
-print()
-print("Word: ", newBlanks)
+    print()
+    newBlanks = blanks
+    print("Word: ", newBlanks)
 
 input("\n\nPress enter to exit.")
