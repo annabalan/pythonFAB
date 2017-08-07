@@ -8,7 +8,7 @@ for item in inventory:
 # get the length of a list
 print("You have", len(inventory), "items in your possession.")
 
-input("\nPress the enter key to continue.")
+input("\nPress the enter key to continue.\n")
 
 # test for membership with in
 if "healing potion" in inventory:
@@ -23,10 +23,11 @@ start = int(input("\nEnter the index number to begin a slice: "))
 finish = int(input("\nEnter the index number to end the slice: "))
 print("inventory[", start, ":", finish, "] is", end=" ")
 print(inventory[start:finish])
-input("\nPress the enter key to continue.")
+
+input("\nPress the enter key to continue.\n")
 
 #concatenate two lists
-chest = ["gold", "games"]
+chest = ["gold", "gems"]
 print("You find a chest which contains: ")
 print(chest)
 print("You add the contents of the chest to your inventory.")
@@ -34,4 +35,37 @@ inventory += chest
 print("Your inventory is now:")
 print(inventory)
 
-input("\nPress the enter key to continue.")
+input("\nPress the enter key to continue.\n")
+
+# assign by index
+print("You trade your sword for a crossbow.")
+inventory[0] = "crossbow"
+print("Your inventory is now:")
+print(inventory)
+
+input("\nPress the enter key to continue.\n")
+
+# assign by slice
+
+print("You use your gold and gems to buy an orb of future telling.")
+inventory[4:6] = ["orb of future telling"]
+print("Your inventory is now:")
+print(inventory)
+
+input("\nPress the enter key to continue.\n")
+
+# delete an element
+print("In a great battle, your shield is destroyed.")
+del inventory[2]
+print("Your inventory is now:")
+print(inventory)
+
+input("\nPress the enter key to continue.\n")
+
+# delete a slice
+print("Your crossbow and armor are stolen by thieves.")
+del inventory[:2]
+print("Your inventory is now:")
+print(inventory)
+
+input("\nPress the enter key to exit.\n")
