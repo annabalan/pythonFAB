@@ -34,3 +34,12 @@ while choice != "0":
         print("\n", term, "means", definition)
     else:
         print("\nSorry, I don't know", term)
+  elif choice == "2":
+      term = input("What term do you want me to add?: ")
+      if term not in geek:
+          definition = input("\nWhat's the definition?: ")
+          geek[term] = definition
+          print("\n", term, "has been added.")
+      else:
+          print("\nThat term already exists! Try redefining it.")
+          
