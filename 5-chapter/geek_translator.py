@@ -51,3 +51,14 @@ while choice != "0":
             print("\n", term, "has been redfinied.")
         else:
             print("\nThat term doesn't exists! Try adding it.")
+    # delete a term-definition pair 
+    elif choice == "4":
+      term = input("What term do you want me to delete?: ")
+      if term in geek:
+        del geek[term]
+        print("\nOkay, I deleted", term)
+      else:
+        print("\nI can't do that!", term, "doesn't exist in the dictionary.")
+    else:
+      print("\nSorry, but", choice, "isn't a valid choice.")
+  input("\n\nPress the enter key to exit.")
