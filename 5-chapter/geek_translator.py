@@ -1,7 +1,7 @@
 # Geek Translator
 # Demonstrates using dictionaries.
 
-geek = ["404": "clueless. From the web error message 404, meaning page not found.",
+geek = ["404" : "clueless. From the web error message 404, meaning page not found.",
 "Googling": "searching the Internet for background information on a person.",
 "Keyboard Plaque": "the collection of debris found in computer keyboards.",
 "Link Rot": "the process by which web page links become obsolete.",
@@ -42,4 +42,12 @@ while choice != "0":
           print("\n", term, "has been added.")
       else:
           print("\nThat term already exists! Try redefining it.")
-          
+# redifine an existing term
+    elif choice == "3":
+        term = input("What term do you want me to redifine?: ")
+        if term in geek:
+            definition = input("What's the new definiton?: ")
+            geek[term] = definition
+            print("\n", term, "has been redfinied.")
+        else:
+            print("\nThat term doesn't exists! Try adding it.")
