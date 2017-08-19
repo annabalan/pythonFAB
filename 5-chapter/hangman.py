@@ -8,7 +8,8 @@
 import random
 # constants
 HANGMAN = (
-"""+---+
+"""
+   +---+
    |   |
        |
        |
@@ -25,7 +26,8 @@ HANGMAN = (
         |
  =========
  """,
- """+---+
+ """
+    +---+
     |   |
     O   |
     |   |
@@ -33,7 +35,8 @@ HANGMAN = (
         |
  =========
  """,
- """ +---+
+ """
+     +---+
      |   |
      O   |
     /|   |
@@ -41,7 +44,8 @@ HANGMAN = (
          |
   =========
   """,
-  """ +---+
+  """
+      +---+
       |   |
       O   |
      /|\  |
@@ -58,7 +62,8 @@ HANGMAN = (
           |
    =========
    """,
-   """+---+
+   """
+      +---+
       |   |
       O   |
      /|\  |
@@ -78,15 +83,15 @@ print("Welcome to Hangman. Good luck!")
 
 while wrong < MAX_WRONG and so_far != word:
     print(HANGMAN[wrong])
-    print("\nYou've used the following letters:\n". used)
+    print("\nYou've used the following letters:\n", used)
     print("\nSo far, the word is:\n", so_far)
-guess = input("\n\nEnter your guess: ")
-guess = guess.upper()
+    guess = input("\n\nEnter your guess: ")
+    guess = guess.upper()
 while guess in used:
     print("You've already guessed the letter", guess)
     guess = input("Enter your guess: ")
     guess = guess.upper()
-used.append(guess)
+    used.append(guess)
 if guess in word:
     print("\nYes!", guess, "is in word!")
     new = ""
@@ -95,7 +100,7 @@ if guess in word:
             new += guess
         else:
             new += so_far[i]
-    so_far = new
+            so_far = new
 else:
     print("\nSorry,", guess, "isn't in the word.")
     wrong += 1
@@ -104,6 +109,6 @@ if wrong == MAX_WRONG:
     print("You've been hanged!")
 else:
     print("\nYou guessed it!")
-print("\nThe word was", word)
+    print("\nThe word was", word)
 
 input("\nPress the enter key to exit.")
