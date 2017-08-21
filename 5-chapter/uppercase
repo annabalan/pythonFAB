@@ -1,0 +1,12 @@
+words = ["film", "deadly", "caress", "harlot", "royal", "awakening", "column", "homemade", "pessimist", "adornment"]
+print(type(words))
+print(type(words[0]))
+print(words[0].upper())
+for i in range(0, len(words)):
+  print(words[i].upper())
+
+for i in words:
+  print(i.upper())
+
+# UPPERCASE = words.upper()
+# print(UPPERCASE)
