@@ -1,12 +1,14 @@
-words = ["film", "deadly", "caress", "harlot", "royal", "awakening", "column", "homemade", "pessimist", "adornment"]
-print(type(words))
-print(type(words[0]))
-print(words[0].upper())
-for i in range(0, len(words)):
-  print(words[i].upper())
+string = input("Enter: ")
 
-for i in words:
+# words = ["film", "deadly", "caress", "harlot", "royal", "awakening", "column", "homemade", "pessimist", "adornment"]
+# print(type(words))
+# print(type(words[0]))
+# print(words[0].upper())
+for i in range(0, len(string)):
+  print(string[i].upper())
+for i in string:
   print(i.upper())
+
 
 # UPPERCASE = words.upper()
 # print(UPPERCASE)
