@@ -38,7 +38,7 @@ while choice != "0":
     else:
       print(score, "isn't in the high score list.")
   elif choice == "4":
-    scores.sort(revere=True)
+    scores.sort(reverse=True)
 # some unknown choice
   else:
     print("Sorry, but", choice, "isn't a valid choice.")
