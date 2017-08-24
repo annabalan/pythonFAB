@@ -1,10 +1,26 @@
 # High Scores
 # Demonstrates nested sequences
 
-score = []
-
+scores = 0
 choice = None
-while choice 1= "0":
+nested = ("second", "third", ["fourth", "fifth", "sixth"])
+print(nested)
+
+scores = [("Moe", 1000), ("Larry", 1500), ("Curly", 3000)]
+print(scores)
+print(scores[1])
+print(scores[2])
+
+a_score = scores[2]
+print(a_score)
+print(a_score[0])
+
+print(scores[2][0])
+
+name, score = ("Shemp", 175)
+print(name)
+print(score)
+while choice != "0":
   print(
   """
   High Scores 2.0
@@ -14,28 +30,27 @@ while choice 1= "0":
   2 - Add a score
   """
   )
-
   choice = input("Choice: ")
   print()
-  # exit
+# exit
   if choice == "0":
     print("Good-bye.")
-  # display high-score table
+    # display high-score table
   elif choice == "1":
     print("High Scores\n")
     for entry in scores:
       score, name = entry
       print(name, "\t", score)
-  # add a score
+      # add a score
   elif choice == "2":
     name = input("What is the player's name?: ")
     score = int(input("What score did the player get?: "))
     entry = (score, name)
     scores.append(entry)
     scores.sort(reverse=True)
-    scores = scores[:5]  # keep only 5 scores
-  # some unknown choice
+    scorces = scores[:5]  # keep only 5 scores
+    # some unknown choice
   else:
     print("Sorry, but", choice, "isn't a valid choice.")
 
-input("\n\nPress the enter key to exit.")  
+input("\n\nPress the enter key to exit.")
