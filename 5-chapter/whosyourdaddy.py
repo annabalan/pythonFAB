@@ -28,7 +28,7 @@ while choice != "0":
     if entry in father_son:
         print("\n", entry)
     else:
-        print("\nSorry, that name is inforation is not on file.")
+        print("\nSorry, that name is information is not on file.")
   elif choice == "2":
       entry = input("What is the son's name?: ")
       if entry not in father_son:
