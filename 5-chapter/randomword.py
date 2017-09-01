@@ -4,7 +4,7 @@
 import random
 
 words = ["copper", "explain", "ill-fated", "truck", "neat", "unite", "branch", "educated",
-"tenuous", "hum", "decisive", "notice"]
+"tenuous", "hum", "decisive", "notice", "phone", "jello", "fish"]
 
 while words != 0:
   high = len(words)
