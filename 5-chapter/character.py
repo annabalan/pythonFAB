@@ -13,3 +13,18 @@ print(
 2 - Add Points To a Character
 3 - Remove Points Back To The Pool
 """)
+choice = input("Choice: ")
+print()
+# exit
+if choice == "0":
+  print("Good-bye.")
+elif choice == "1":
+  print("Point Pool\n",points)
+elif choice == "2":
+  ch = int(input("What character would you like to purchase?:"))
+  pts = int(input("What points would you like to assing?: "))
+  entry = (ch.pts)
+else:
+  print("Sorry, but", choice, "isn't a valid choice.")
+
+input("\n\nPress the enter key to exit.")
