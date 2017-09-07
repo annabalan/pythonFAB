@@ -21,8 +21,8 @@ if choice == "0":
 elif choice == "1":
   print("Point Pool\n",points)
 elif choice == "2":
-  ch = int(input("What character would you like to purchase?:"))
-  pts = int(input("What points would you like to assing?: "))
+  ch = int(input("What character would you like to add points to?:"))
+  pts = int(input("How many points would you like to add?: "))
   entry = (ch.pts)
 else:
   print("Sorry, but", choice, "isn't a valid choice.")
