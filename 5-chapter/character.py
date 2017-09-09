@@ -11,7 +11,7 @@ print(
 0 - Exit
 1 - Show Point Pool
 2 - Add Points To a Character
-3 - Remove Points Back To The Pool
+3 - Return Points Back To The Pool
 """)
 choice = input("Choice: ")
 print()
