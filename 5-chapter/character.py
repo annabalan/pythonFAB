@@ -1,6 +1,6 @@
 # Character Creator Program
 
-attributes = ("Strength", "Health", "Wisdom", "Dexterity")
+attributes = ("Strength":"", "Health":"", "Wisdom":"", "Dexterity":"")
 print("\t\tWelcome to Character!")
 print("You have 30 points that you can use for any of these characters.")
 print("You can spend it on,", attributes)
