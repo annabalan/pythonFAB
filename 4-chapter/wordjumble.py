@@ -4,7 +4,7 @@
 
 import random
 
-WORDS = ("python", "jumble", "book", "snack", "music", "sheet", "easy", "difficult", "answer", "xylophone")
+WORDS = ("python", "jumble", "struggle", "mixer", "book", "snack", "music", "sheet", "easy", "difficult", "answer", "xylophone")
 
 # pick one word randomly from the sequence
 word = random.choice(WORDS)
