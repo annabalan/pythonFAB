@@ -1,0 +1,8 @@
+# Budget calculator
+
+print (""\n\t\t'Budget Calculator'\n")
+
+income = input("Enter your monthly income: ")
+save = input("Enter monthly amount to save: ")
+rent = input ("Enter rent: ")
+utilities 
