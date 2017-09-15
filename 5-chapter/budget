@@ -4,5 +4,7 @@ print (""\n\t\t'Budget Calculator'\n")
 
 income = input("Enter your monthly income: ")
 save = input("Enter monthly amount to save: ")
-rent = input ("Enter rent: ")
-utilities 
+rent = input("Enter rent: ")
+utilities  =input("Enter utilities: ")
+food = input("Enter cost of food: ")
+miscellanous: input("Enter other: ")
