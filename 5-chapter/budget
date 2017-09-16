@@ -8,3 +8,5 @@ rent = input("Enter rent: ")
 utilities  =input("Enter utilities: ")
 food = input("Enter cost of food: ")
 miscellanous: input("Enter other: ")
+
+print()
