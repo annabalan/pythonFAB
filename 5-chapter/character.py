@@ -1,6 +1,6 @@
 # Character Creator Program
 
-attributes = ("Strength":"", "Health":"", "Wisdom":"", "Dexterity":"")
+attributes = {"STRENGTH":"", "HEALTH":"", "WISDOM":"", "DEXTERITY":""}
 print("\t\tWelcome to Character!")
 print("You have 30 points that you can use for any of these characters.")
 print("You can spend it on,", attributes)
@@ -21,9 +21,19 @@ if choice == "0":
 elif choice == "1":
   print("Point Pool\n",points)
 elif choice == "2":
-  ch = int(input("What character would you like to add points to?:"))
-  pts = int(input("How many points would you like to add?: "))
-  entry = (ch.pts)
+  add = input("What attribute would you like to add points to?: ")
+  if add in attributes:
+      pts = input("\nWhat point would you like to add? ")
+      attributes[add] = pts
+      print("\n", add, "now has", pts)
+  else:
+      ("Sorry, but", add, "isn't a valid attriute.")
+elif choice == "3":
+    change = input("What attribute would you like to change points to?: ")
+    if change in attributes:
+        pts = input("What points would you like to add instead?: ")
+        attributes[change] = pts
+        print("\n", change, "now has", pts)
 else:
   print("Sorry, but", choice, "isn't a valid choice.")
 
