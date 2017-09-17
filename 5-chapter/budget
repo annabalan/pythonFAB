@@ -10,3 +10,5 @@ food = input("Enter cost of food: ")
 miscellanous: input("Enter other: ")
 
 print()
+total = (income - save -rent - utilities - food - miscellanous)
+print(total)
