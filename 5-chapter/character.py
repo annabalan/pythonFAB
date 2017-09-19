@@ -23,7 +23,7 @@ elif choice == "1":
 elif choice == "2":
   add = input("What attribute would you like to add points to?: ")
   if add in attributes:
-      pts = input("\nWhat point would you like to add? ")
+      pts = input("\nHow many points would you like to add? ")
       attributes[add] = pts
       print("\n", add, "now has", pts)
   else:
