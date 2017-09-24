@@ -2,13 +2,13 @@
 
 print (""\n\t\t'Budget Calculator'\n")
 
-income = input("Enter your monthly income: ")
+income = input("Monthly Income: ")
+rent = input("Rent: ")
+utilities  =input("Utilities: ")
+food = input("Food: ")
+other: input("Enter other: ")
 save = input("Enter monthly amount to save: ")
-rent = input("Enter rent: ")
-utilities  =input("Enter utilities: ")
-food = input("Enter cost of food: ")
-miscellanous: input("Enter other: ")
 
 print()
-total = (income - save -rent - utilities - food - miscellanous)
+total = (income - save -rent - utilities - food - other)
 print(total)
