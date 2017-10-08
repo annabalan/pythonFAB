@@ -112,3 +112,11 @@ for move in legal_moves(board):
     return move
   # done checking this move, undo it
   board[move] = EMPTY
+# if human can win, block that move
+for move in legal_moves(board):
+  board[move] = human
+  if winner(board) == human:
+    print(move)
+    return move
+  # done checking this move, undo it
+  board[move] = EMPTY
