@@ -120,3 +120,15 @@ for move in legal_moves(board):
     return move
   # done checking this move, undo it
   board[move] = EMPTY
+# since no one can win on next move, pick open square
+for move in legal_moves(board):
+  if move in legal_moves(board):
+    print(move)
+    return(move)
+def next_turn(turn):
+  """Switch turns."""
+  if turn == X:
+    return O
+  else:
+    return X
+  
