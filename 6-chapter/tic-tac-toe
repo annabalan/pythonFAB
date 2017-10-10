@@ -58,9 +58,9 @@ def new_board():
   return board
 def display_board(board):
   """Display game board on screen."""
-  print("\n\t", board[0], "|", board[1], "|", board [2])
+  print("\n\t", board[0], "|", board[1], "|", board[2])
   print("\t", "---------")
-  print("\t", board[3], "|", board[4], "|", board [5])
+  print("\t", board[3], "|", board[4], "|", board[5])
   print("\t", "---------")
   print("t", board[6], "|", board[7], "|", board[8], "\n")
 def legal_moves(board):
@@ -107,7 +107,7 @@ def computer_move(board, computer, human):
 # if computer can win, take that move
 for move in legal_moves(board):
   board[move] = computer
-  if winner (board) == computer
+  if winner(board) == computer
     print(move)
     return move
   # done checking this move, undo it
@@ -131,4 +131,3 @@ def next_turn(turn):
     return O
   else:
     return X
-  
