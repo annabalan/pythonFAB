@@ -131,3 +131,19 @@ def next_turn(turn):
     return O
   else:
     return X
+def congrat_winner(the_winner, computer, human):
+  """Congratulate the winner."""
+  if the_winner != TIE:
+    print(the_winner, "won!\n")
+  else:
+    print("It's a tie!\n")
+  if the winner == computer:
+    print("As I predicted, human, I am triumphant once more. \n" \
+    "Proof that computers are superior to humans in all regards.")
+  elif the_winner == human:
+    print("No, no! It cannot be! Somehow you tricked me, human. \n \
+    "But never again! I, the computer, so swear it!")
+  elif the_winner == TIE:
+    print("You were most lucky, human, and somehow managed to tie me. \n \
+    "Celebrate today... for this is the best you will ever achieve.")
+  
