@@ -146,4 +146,24 @@ def congrat_winner(the_winner, computer, human):
   elif the_winner == TIE:
     print("You were most lucky, human, and somehow managed to tie me. \n \
     "Celebrate today... for this is the best you will ever achieve.")
-  
+def main():
+  display_instruct()
+  computer, human, = pieces()
+  turn = X
+  board = new_board()
+  display_board(board)
+
+  while not winner(board):
+    if turn == human:
+      move = human_move(board, human)
+      board[move] = human
+    else:
+      move = computer_move(board, computer, human)
+      board[move] = computer
+    display_board(board)
+    turn = next_turn(turn)
+  the_winner = winner(board)
+  congrat_winner(the_winner, computer, human)
+  #start the program
+main()
+input("Press the enter key to quit.")
