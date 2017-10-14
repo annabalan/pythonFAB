@@ -67,7 +67,7 @@ def legal_moves(board):
   """Create list of legal moves."""
   moves = []
   for square in range(NUM_SQUARES):
-    if board[square] == EMPTY
+    if board[square] == EMPTY:
       moves.append(square)
   return moves
 def winner(board):
@@ -107,11 +107,10 @@ def computer_move(board, computer, human):
 # if computer can win, take that move
 for move in legal_moves(board):
   board[move] = computer
-  if winner(board) == computer
+  if winner(board) == computer:
     print(move)
     return move
-  # done checking this move, undo it
-  board[move] = EMPTY
+    board[move] = EMPTY
 # if human can win, block that move
 for move in legal_moves(board):
   board[move] = human
@@ -137,15 +136,15 @@ def congrat_winner(the_winner, computer, human):
     print(the_winner, "won!\n")
   else:
     print("It's a tie!\n")
-  if the winner == computer:
+  if the_winner == computer:
     print("As I predicted, human, I am triumphant once more. \n" \
     "Proof that computers are superior to humans in all regards.")
   elif the_winner == human:
     print("No, no! It cannot be! Somehow you tricked me, human. \n \
-    "But never again! I, the computer, so swear it!")
+    'But never again! I, the computer, so swear it!'")
   elif the_winner == TIE:
     print("You were most lucky, human, and somehow managed to tie me. \n \
-    "Celebrate today... for this is the best you will ever achieve.")
+    'Celebrate today... for this is the best you will ever achieve.'")
 def main():
   display_instruct()
   computer, human, = pieces()
