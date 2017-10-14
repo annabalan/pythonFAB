@@ -110,15 +110,14 @@ for move in legal_moves(board):
   if winner(board) == computer:
     print(move)
     return move
-    board[move] = EMPTY
+  board[move] = EMPTY
 # if human can win, block that move
 for move in legal_moves(board):
   board[move] = human
   if winner(board) == human:
     print(move)
     return move
-  # done checking this move, undo it
-  board[move] = EMPTY
+    board[move] = EMPTY
 # since no one can win on next move, pick open square
 for move in legal_moves(board):
   if move in legal_moves(board):
