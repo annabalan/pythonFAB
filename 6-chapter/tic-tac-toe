@@ -146,7 +146,7 @@ def congrat_winner(the_winner, computer, human):
     print("You were most lucky, human, and somehow managed to tie me. \n \
     'Celebrate today... for this is the best you will ever achieve.'")
 def main():
-  display_instruct()
+  display_instructions()
   computer, human, = pieces()
   turn = X
   board = new_board()
@@ -164,5 +164,5 @@ def main():
   the_winner = winner(board)
   congrat_winner(the_winner, computer, human)
   #start the program
-main()
+  main()
 input("Press the enter key to quit.")
