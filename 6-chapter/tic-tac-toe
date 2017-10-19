@@ -163,6 +163,6 @@ def main():
     turn = next_turn(turn)
   the_winner = winner(board)
   congrat_winner(the_winner, computer, human)
-  #start the program
-  main()
+#start the program
+main()
 input("Press the enter key to quit.")
