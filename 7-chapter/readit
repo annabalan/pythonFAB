@@ -1,0 +1,12 @@
+# Read It
+# Demonstrates reading from a text file
+
+print("Opening and closing the file.")
+text_file = open("read_it.txt", "r")
+text_file.close()
+
+print("\nReading character from the file.")
+text_file = open("read_it.txt", "r")
+print(text_file.read(1))
+print(text_file.read(5))
+text_file.close()
