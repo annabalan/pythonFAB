@@ -21,7 +21,7 @@ print("\nReading characters from a line.")
 text_file = open("read_it.txt", "r")
 print(text_file.readline(1))
 print(text_file.readline(5))
-text.file.close()
+text_file.close()
 
 print("\nReading one line at a time.")
 text_file = open("read_it.txt", "r")
