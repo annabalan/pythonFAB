@@ -1,0 +1,5 @@
+# Write it
+# Demonstrates writing to a text file
+
+print("Creating a text file with the write() method.")
+text_file = open("write_it.txt", "w")
