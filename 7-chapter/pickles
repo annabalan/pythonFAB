@@ -1,0 +1,8 @@
+# Pickle It
+# Demonstrates pickling and shelving data
+
+import pickle, shelve
+print("Pickling lists.")
+variety = ["sweet", "hot", "dill"]
+shape = ["whole", "spear", "chip"] brand = ["Claussen", "Heinz", "Vlassic"]
+f = open("pickles1.dat", "wb")
