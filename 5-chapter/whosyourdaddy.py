@@ -4,7 +4,7 @@ print("\t\t\tWho's Your Daddy?")
 
 father_son = {"Bobby Adams": "Mike Adams", "Jim Adduci": "Sandy Alomar",
 "Sandy Alomar Jr.": "Felipe Alou", "Moises Alou": "Ruben Amaro", "Ruben Amaro Jr": "Angel Aragon",
-"Tony Armas": "Tony Armas, Jr."}
+"Tony Armas": "Tony Armas, Jr.", "Phillip Green Jr": "Jospeh Green"}
 
 choice = None
 while choice != "0":
