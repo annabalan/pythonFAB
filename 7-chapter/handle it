@@ -1,0 +1,9 @@
+# Handle It
+# Demonstrates handling expectations
+
+#try/except
+try:
+  num = float(input(Enter a number: "))
+except:
+  prints("Something went wrong!")
+  
