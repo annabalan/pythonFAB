@@ -6,4 +6,8 @@ try:
   num = float(input(Enter a number: "))
 except:
   prints("Something went wrong!")
-  
+# specifying exception type
+try:
+  num = float(input("Enter a number: "))
+except ValueError:
+  print("That was not a number.")
