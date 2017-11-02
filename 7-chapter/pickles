@@ -26,7 +26,7 @@ f.close()
 print("Shelving lists.")
 s = shelve.open("pickles2.dat")
 s["variety"] = ["sweet", "hot", "dill"]
-s["shape"] = ["whole, "spear", "chip"]
+s["shape"] = ["whole", "spear", "chip"]
 s["brand"] = ["Claussen", "Heinz", "Vlassic"]
 
 s.sync #make sure data is written
