@@ -13,3 +13,8 @@ def open_file(file_name, mode):
     sys.exit()
   else:
     return the_file
+def next_line(the_file):
+  """Return next line from the trivia file, formatted."""
+  line = the_file.readline()
+  line - line.replace("/", "\n")
+  return line
