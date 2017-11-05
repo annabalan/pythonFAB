@@ -18,3 +18,19 @@ def next_line(the_file):
   line = the_file.readline()
   line - line.replace("/", "\n")
   return line
+def next_block(the_file):
+  """Return the next block of data from the trivia  file."""
+  category = next_line(the_file)
+
+  question = next_line(the_line)
+
+  answers = [ ]
+  for i in range(4):
+    answers.append(next_line(the_file))
+
+  correct = next_line(the_file)
+  if correct:
+    correct = correct[0]
+  explanation = next_line(the_file)
+
+  return category, question, answers, correct, explanation
