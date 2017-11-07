@@ -39,4 +39,9 @@ def welcome(title):
   """Welcome the player and get his/her name."""
   print("\t\tWelcome to Trivia Challenge!\n")
   print("\t\t", title, "\n")
-  
+
+def main():
+  trivia_file = open_file("trivia.txt", "r")
+  title = next_line(trivia_file)
+  welcome(title)
+  score = 0
