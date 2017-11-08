@@ -45,3 +45,11 @@ def main():
   title = next_line(trivia_file)
   welcome(title)
   score = 0
+# get first back
+category, question, answers, correct, explanation = next_block(trivia_file)
+while category:
+  # ask a question
+  print(category)
+  print(question)
+  for i in range(4):
+    print("\t", i + 1, "-", answers[i])
