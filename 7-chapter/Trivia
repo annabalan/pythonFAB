@@ -53,3 +53,13 @@ while category:
   print(question)
   for i in range(4):
     print("\t", i + 1, "-", answers[i])
+  # get answer
+  answer = input("What's your answer?: ")
+  # check answer
+  if answer == correct:
+    print("\nRight!", end=" ")
+    score += 1
+  else:
+    print("\nWrong." end=" ")
+  print(explanation)
+  print("Score:", "\n\n")
