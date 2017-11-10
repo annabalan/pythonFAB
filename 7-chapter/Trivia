@@ -63,3 +63,12 @@ while category:
     print("\nWrong." end=" ")
   print(explanation)
   print("Score:", "\n\n")
+  # get next block
+  category, question, answers, correct, explanation = next_block(trivia_file)
+  trivia_file.close()
+
+print("That was the last question!")
+print("You're final score is", score)
+
+main()
+input("\n\nPress the enter key to exit.")
