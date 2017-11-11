@@ -45,30 +45,30 @@ def main():
   title = next_line(trivia_file)
   welcome(title)
   score = 0
-# get first back
-category, question, answers, correct, explanation = next_block(trivia_file)
-while category:
-  # ask a question
-  print(category)
-  print(question)
-  for i in range(4):
-    print("\t", i + 1, "-", answers[i])
-  # get answer
-  answer = input("What's your answer?: ")
-  # check answer
-  if answer == correct:
-    print("\nRight!", end=" ")
-    score += 1
-  else:
-    print("\nWrong." end=" ")
-  print(explanation)
-  print("Score:", "\n\n")
-  # get next block
+  # get first back
   category, question, answers, correct, explanation = next_block(trivia_file)
-  trivia_file.close()
+  while category:
+    # ask a question
+    print(category)
+    print(question)
+    for i in range(4):
+      print("\t", i + 1, "-", answers[i])
+    # get answer
+    answer = input("What's your answer?: ")
+    # check answer
+    if answer == correct:
+      print("\nRight!", end=" ")
+      score += 1
+    else:
+      print("\nWrong!", end=" ")
+    print(explanation)
+    print("Score:", "\n\n")
+    # get next block
+    category, question, answers, correct, explanation = next_block(trivia_file)
+    trivia_file.close()
 
-print("That was the last question!")
-print("You're final score is", score)
+    print("That was the last question!")
+    print("You're final score is", score)
 
 main()
 input("\n\nPress the enter key to exit.")
