@@ -70,5 +70,5 @@ def main():
     print("That was the last question!")
     print("You're final score is", score)
 
-main()
+  main()
 input("\n\nPress the enter key to exit.")
