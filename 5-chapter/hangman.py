@@ -73,7 +73,7 @@ HANGMAN = (
    """)
 
 MAX_WRONG = len(HANGMAN) - 1
-WORDS = ("OVERUSED", "TEA", "PIANO", "BLANKET", "CLAM", "GUAM", "TAFFETA", "PYTHON", "FILM", "DEADLY", "BOOK", "ROYAL", "COLUMN", "BED", "MOUNTAIN")
+WORDS = ("OVERUSED", "TOOTH", "TEA", "PIANO", "BLANKET", "CLAM", "GUAM", "TAFFETA", "PYTHON", "FILM", "DEADLY", "BOOK", "ROYAL", "COLUMN", "BED", "MOUNTAIN")
 # initialize variables
 word = random.choice(WORDS)
 so_far = "_" * len(word)
