@@ -13,21 +13,22 @@ def open_file(file_name, mode):
     sys.exit()
   else:
     return the_file
+
 def next_line(the_file):
   """Return next line from the trivia file, formatted."""
   line = the_file.readline()
-  line - line.replace("/", "\n")
+  line = line.replace("/", "\n")
   return line
+
 def next_block(the_file):
   """Return the next block of data from the trivia  file."""
   category = next_line(the_file)
 
-  question = next_line(the_line)
+  question = next_line(the_file)
 
   answers = [ ]
   for i in range(4):
     answers.append(next_line(the_file))
-
   correct = next_line(the_file)
   if correct:
     correct = correct[0]
@@ -45,6 +46,7 @@ def main():
   title = next_line(trivia_file)
   welcome(title)
   score = 0
+
   # get first back
   category, question, answers, correct, explanation = next_block(trivia_file)
   while category:
@@ -57,18 +59,18 @@ def main():
     answer = input("What's your answer?: ")
     # check answer
     if answer == correct:
-      print("\nRight!", end=" ")
+      print("\nRight!")
       score += 1
     else:
-      print("\nWrong!", end=" ")
+      print("\nWrong!")
     print(explanation)
     print("Score:", "\n\n")
-    # get next block
+  # get next block
     category, question, answers, correct, explanation = next_block(trivia_file)
-    trivia_file.close()
+  trivia_file.close()
 
-    print("That was the last question!")
-    print("You're final score is", score)
+  print("That was the last question!")
+  print("You're final score is", score)
 
-  main()
+main()
 input("\n\nPress the enter key to exit.")
