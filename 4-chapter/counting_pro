@@ -1,0 +1,6 @@
+# Counting Pro
+print(""\n\t\tWelcome to the Counting Pro!\n\n)
+
+start = input("Enter a starting number: ")
+finish = input("Enter the ending number: ")
+count = input("Enter the number you wish to count by: ")
