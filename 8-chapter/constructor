@@ -1,0 +1,8 @@
+# Constructor Critter
+# Demonstrates constructions
+
+class Critter(object):
+  """A virtual pet"""
+  def _init_(self):
+    print("A new critter has been born!")
+    
