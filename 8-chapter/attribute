@@ -3,16 +3,16 @@
 
 class Critter(object):
   """A virtual pet"""
-  def_init_(self, name):
+  def _init_(self, name):
     print("A new critter has been born!")
     self.name = name
-  def_str_(self):
+  def _str_(self):
       rep = "Critter object\n"
       rep += "name: " + self.name + "\n"
       return rep
   def talk(self):
     print("Hi. I'm", self.name, "\n")
-# main
+    # main
 crit1 = Critter("Poochie")
 crit1.talk()
 
