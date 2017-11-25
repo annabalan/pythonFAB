@@ -7,3 +7,9 @@ class Critter(object):
   @staticmethod
   def status():
     print("\nThe total number of critters is", Critter.total)
+
+  def init_(self, name):
+    print("A critter has been born!")
+    self.name = name
+    Critter.total +=1
+    
