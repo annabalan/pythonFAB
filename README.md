@@ -1,2 +1,2 @@
 # pythonFAB
-This is a repo of projects and challenges from "Python for Absolute Beginners".
+This is a repository of lessons, projects and challenges from the book "Python for Absolute Beginners".
